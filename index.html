@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/sinter_logo_redraw_3.png"  type="image/icon type">
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap" rel="stylesheet">
+    <title>Snow International</title>
+</head>
+<body>
+    <div class="menu" id="myMenu">
+        <a class="closebtn" onclick="closeNav()">x</a>
+        <a href="#">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="snowSchool.html">Snow School</a>
+        <a href="quarterlyMeetings.html">Quarterly Meetings</a>
+        <a href="news.html">News</a>
+    </div>
+   <div id="main" class="mainContent">
+       <div class="textAndPicture">
+       
+        <div class="textBox">
+            <h1 class="title">SINTER: </br>
+                Snow </br>
+                International</h1>
+            <div class="textPortion">
+                <p>     Snow remote sensing has been underway for more than 40 years, and is today (in a warming world) more critical than ever. 
+                While there are a number of societies and unions that deal with snow in general, there has not been a society or group 
+                specifically focused on seasonal snow and remote sensing. Nonetheless, a real snow and remote sensing community exists and understands 
+                it has a clear mission: to provide the techniques and methods needed to answer the world's pressing snow problems. This website is the home 
+                for that community.</p>     
+            </div>
+        </div>
+        <div class="slideShow">
+            <img id="pictureSlide" src="src/SINTER snowmobile picture.jpg">
+            
+            
+        </div>
+        <div class="controlIcons">
+            <div class="heading" id="buttons">
+                <div onclick="openNav()" class="menuButton">
+                    <img src="./src/MenuIcon.png" />
+                </div>
+                <div class="logo">
+                <img src="./src/sinter_logo_redraw_3.png" />
+                <h1>SINTER</h1>
+                </div>   
+            
+            </div>
+            <div class="locationCredits">
+                <p>
+                    NT, Canada </br>
+                    <i id="photoCredits">Photo Credits: Arvids Silis</i>
+                </p>
+            </div>
+            <div class="slideShowButtons">
+                <div onclick="decreaseIndex()" ><img src="src/SlideShowButtonUp.png"></div>
+                <div onclick="increaseIndex()" ><img src="src/SlideShowButtonDown.png"></div>  
+            </div>    
+        </div>
+    </div>
+        
+   <script src="JavaScript/index.js"></script>
+</body>
+</html>

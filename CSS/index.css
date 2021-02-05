@@ -1,0 +1,194 @@
+/*
+Jori Carter
+
+CSS Sinter Homepage
+*/
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Gothic A1", Arial, Helvetica, sans-serif;
+    background-color: white;
+    /*overflow: hidden;*/
+    color: rgb(55, 75, 104);
+}
+
+/* The side navigation menu */
+.menu {
+    height: 100vh; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(231, 231, 231);
+    overflow-x: hidden;
+    padding-top: 5%;
+    transition: 0.5s;
+  }
+  
+  /* The navigation menu links */
+  .menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:rgb(59, 62, 104) ;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .menu a:hover {
+    color: #8b8b8b;
+  }
+  
+  .menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+  }
+
+
+/*This is the main content of the page. Note that this display is flex, while the other components are in grid format*/
+.mainContent{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Heading code pertains only to the logo and menu button*/
+.heading {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.menuButton {
+    border: none;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+}
+
+.menuButton img {
+    height: 70%;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    justify-self: start;
+    align-self: center;
+    padding: 4%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10%;
+    color:rgb(55, 75, 104);
+}
+
+.logo h1 {
+    grid-column: 2;
+    font-size: 1.6em;
+}
+
+.logo img {
+    grid-column: 1;
+}
+
+/*This portion is the left side of the main content section. Note that the width of this changes depending on the size of the image.*/
+.textBox {
+    margin: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.textPortion {
+    grid-row: 5 / span 4;
+    margin: 0;
+    width: 100%;
+    background-color:rgb(236, 236, 236);
+}
+
+.textAndPicture {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.textPortion p{
+    grid-row: 2 / span 3;
+    font-size: 1.2em;
+    line-height: large;
+    justify-self: center;
+    align-self: center;
+    width: 85%;
+    padding: 7.5%;
+}
+
+.title {
+    grid-row:  2 / span 3;
+    justify-self: center;
+    align-self: center;
+    font-size: 4em;
+}
+
+/*This code is for the right side of the main content section. See the buttons*/
+.slideShow{
+    height: 100%;
+    max-width: 70vw;
+}
+
+.slideShow img{
+    height: 100%;
+    transition: ease-in;
+}
+
+.controlIcons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    z-index: 2;
+    color: white;
+}
+
+    .locationCredits {
+        grid-row: 1 / span 4;
+        grid-column: 8 / span 4;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+    .slideShowButtons {
+        grid-row: 9 / span 4;
+        grid-column: 20;
+    }
+
+    .slideShowButtons img {
+        height: 100%;
+        width: 100%;
+    }
