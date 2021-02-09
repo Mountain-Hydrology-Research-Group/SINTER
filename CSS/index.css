@@ -136,7 +136,7 @@ body {
 
 .textPortion p{
     grid-row: 2 / span 3;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: large;
     justify-self: center;
     align-self: center;
@@ -148,7 +148,7 @@ body {
     grid-row:  2 / span 3;
     justify-self: center;
     align-self: center;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 /*This code is for the right side of the main content section. See the buttons*/
