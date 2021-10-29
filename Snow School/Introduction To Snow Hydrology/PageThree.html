@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../src/sinter_logo_redraw_3.png"  type="image/icon type">
+    <link rel="stylesheet" href="../../CSS/snowSchool.css" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
+    <title>SINTER Snow School</title>
+</head>
+<body>
+    <div class="menu" id="myMenu">
+        <a class="closebtn" onclick="closeNav()">x</a>
+        <a href="../../index.html">Home</a>
+        <a href="../../aboutUs.html">About Us</a>
+        <a href="../../snowSchool.html">Snow School</a>
+        <a href="../../quarterlyMeetings.html">Quarterly Meetings</a>
+        <a href="../../news.html">News</a>
+        <a href="../../researchLinks.html">Research Links</a>
+        <a href="https://catalyst.uw.edu/webq/survey/jdlund/341546">Join Us!</a>
+    </div>
+    <div id="main" class="schoolPage">
+        <div class="leftSS">
+            <div class="headingSS" id="buttons">
+                <div onclick="openNav()" class="menuButton">
+                    <img src="../../src/MenuIcon.png" />
+                </div>
+                <div class="logo">
+                    <img src="../../src/sinter_logo_redraw_3.png" />
+                    <h1>SINTER <!--span class="pageType">Snow School</span--></h1>
+                </div>
+            </div>
+            <div class="lessonPanel" id="lessPan">
+                <div class="lessonTitle" onclick="closeNavTab()">
+                    <h1>Remote Sensing I</h1>
+                </div>
+                <div class="lessonText">
+                    <p>
+                        This webinar will introduce the basics of snow remote sensing using the optical (solar) wavelengths, 
+                        including an overview of different instruments/techniques (multispectral satellites, imaging 
+                        spectroscopy, lidar, photogrammetry), and how they are used to map variables such as snow reflectance, 
+                        snow covered area, and snow depth. The webinar will include a 'hands on' introduction to snow radiative 
+                        transfer and controls on snow reflectance.
+                    </p>
+                </div>
+                <div class="lessonControls" id="lessCon">
+                    <img src="../../src/SINTER Snow School Play Icon.png" onclick="openClassVideo()">
+                </div>   
+            </div>
+            
+        </div>
+        <div class="rightSS">
+            <div class="visualLessonContent">
+                <img src="../../src/Igloo_lights[8748] Web.jpg">
+            </div>
+            <div class="bottomBar">
+                <h2><a href="./PageFour.html">Up Next: Remote Sensing II</a></h2>
+            </div>
+        </div>
+        <div id="classNavigation" class="navigationTab" onclick="openClassNav()">
+            <h2 id="initialCourseName">3. Remote Sensing</h2>
+            <div id="restOfCourses" class="otherCourses">
+                <h2>Course Components:</h2>
+                <h3>1. Field Methods</h3>
+                <h3>2. Snow Energy Balances</h3>
+                <h3>3. Remote Sensing Part 1</h3>
+            </div>
+            <div id="courseVideo" class="classVideo">
+                <iframe src="https://www.youtube.com/embed/_JW1iyKtbwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="cButton" id="closingButton" onclick="closeNavTab()">
+                <h1>x</h1>
+            </div>
+            
+        </div>
+    </div>
+        
+   <script src="../../JavaScript/index.js"></script>
+   <script src="../../JavaScript/snowSchoolInterfaceMain.js"></script>
+</body>
+</html>

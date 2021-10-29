@@ -32,7 +32,7 @@
 
 .mainAboutUsSpace {
     margin: 0;
-    height: 100%;
+    height: 250px;
     width: 100%;
     background-color: rgb(240, 240, 240);
 }
@@ -42,60 +42,59 @@
     padding: 2% 5%;
 }
 
-.executiveBoard {
-    background-image: url("../src/DSC_0416-1.jpg");
-    background-size: cover;
-}
-
     .executiveBoard h2{
-        float: center;
+        padding: 0 40%;
     }
     .profileSpace {
         width: 90%;
         padding: 0 5%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 5%;
     }
     .profile {
-       color: white;
        width: 90%;
-       height: 90%;
+       height: 325px;
        margin: 3%;
        padding: 2%;
        display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       grid-template-areas: 1;
-       background-color: rgba(89, 96, 99, 0.7);
+       grid-template-rows: 2fr 1fr;
     }
+
+        .profile a{
+            color: rgb(55, 75, 104);
+            text-decoration: none;
+        }
+
+            .profile a:hover {
+                color:rgb(143, 187, 223);
+            }
 
     .profileName {
-        grid-column: 1;
+        grid-row: 2;
+        height: 10%;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 22px 20px 18px;
+        row-gap: 0;
+        justify-content: center;
     }
-        .profileName h3{
-            align-self: center;
+        .profileName h3 {
             justify-self: center;
-            grid-row: 1;
         }
 
-        .sinterTitle{
-            align-self: center;
+        .regionTitle {
             justify-self: center;
-            grid-row: 2;
         }
 
-        .regionTitle{
-            align-self: center;
+        .workLink {
             justify-self: center;
-            grid-row: 3;
         }
+
 
     .profileImage{
         grid-row: 1;
-        grid-column: 2;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         align-self: center;
         justify-self: center;
         border-radius: 100%;
@@ -103,29 +102,71 @@
 
     .profileNoPic{
         grid-row: 1;
-        grid-column: 2;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         align-self: center;
         justify-self: center;
         border-radius: 100%;
         background-color: rgb(143, 187, 223);
     }
 
-        #profileOne{
+        #profileCD{
             background-image: url(../src/ChrisDerksen.JPG);
             background-size: cover;
             background-position: center;
         }
 
-        #profileTwo{
+        #profileNR{
             background-image: url(../src/NickRutter.jpg);
             background-size: cover;
             background-position: center;
         }
 
-        #profileThree{
+        #profileJLq{
             background-image: url(../src/JessicaProfile.jpg);
             background-size: cover;
             background-position: top;
         }
+
+        #profileMS{
+            background-image: url(../src/MelodySandellsProfilePicture.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #profileJLm{
+            background-image: url(../src/JuhaLemmintyinen.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #profileCV{
+            background-image: url(../src/CarrieVuyovich.jpg);
+            background-size: cover;
+            background-position: right;
+        }
+
+        #profileMcS{
+            background-image: url(../src/MckenzieSkiles.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #profileNR{
+            background-image: url(../src/NickRutter.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+        
+        #profileHPM{
+            background-image: url(../src/hpmarshall.jpeg);
+            background-size: cover;
+            background-position: top;
+        }
+
+        #profileKR{
+            background-image: url(../src/KarlRittgerProfile.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    

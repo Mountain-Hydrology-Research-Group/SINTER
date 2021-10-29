@@ -6,21 +6,23 @@
     <link rel="icon" href="../../src/sinter_logo_redraw_3.png"  type="image/icon type">
     <link rel="stylesheet" href="../../CSS/snowSchool.css" />
     <link rel="stylesheet" href="../../CSS/index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
     <title>SINTER Snow School</title>
 </head>
 <body>
     <div class="menu" id="myMenu">
         <a class="closebtn" onclick="closeNav()">x</a>
-        <a href="index.html">Home</a>
-        <a href="aboutUs.html">About Us</a>
-        <a href="snowSchool.html">Snow School</a>
-        <a href="quarterlyMeetings.html">Quarterly Meetings</a>
-        <a href="news.html">News</a>
+        <a href="../../index.html">Home</a>
+        <a href="../../aboutUs.html">About Us</a>
+        <a href="../../snowSchool.html">Snow School</a>
+        <a href="../../quarterlyMeetings.html">Quarterly Meetings</a>
+        <a href="../../news.html">News</a>
+        <a href="../../researchLinks.html">Research Links</a>
+        <a href="https://catalyst.uw.edu/webq/survey/jdlund/341546">Join Us!</a>
     </div>
     <div id="main" class="schoolPage">
         <div class="leftSS">
-            <div class="heading" id="buttons">
+            <div class="headingSS" id="buttons">
                 <div onclick="openNav()" class="menuButton">
                     <img src="../../src/MenuIcon.png" />
                 </div>
@@ -29,35 +31,50 @@
                     <h1>SINTER <!--span class="pageType">Snow School</span--></h1>
                 </div>
             </div>
-            <div class="lessonTitle">
-                <h3>Introduction to Snow Hydrology</h3>
-                <h1>Field Methods</h1>
+            <div class="lessonPanel" id="lessPan">
+                <div class="lessonTitle" onclick="closeNavTab()">
+                    <h1>Snow Energy Balance</h1>
+                </div>
+                <div class="lessonText">
+                    <p>
+                        This webinar will introduce the basics of snow energy balance. This will include an introduction to 
+                        energy exchange processes, how processes vary with different snow covered environments, the relationship between 
+                        energy and mass balance, and how snow energy balance is measured and modeled.
+                    </p>
+                </div>
+                <div class="lessonControls" id="lessCon">
+                    <img src="../../src/SINTER Snow School Play Icon.png" onclick="openClassVideo()">
+                </div>   
             </div>
-            <div class="lessonText">
-                <p>
-                    In this webinar we will discuss: 1) why we still need to measure snow properties in the field, 2) how to measure snow depth, density and water equivalent,
-                     and 3) how to measure snow microstructural properties. We will illustrate a range of traditional and state-of-the-art field snow measurement techniques 
-                     and engage in small group discussions on the considerations required to capture temporal and spatial variability in seasonal snowpacks. 
-                </p>
-            </div>
-            <div class="lessonControls">
-                <a href="./PageOne.html"><button class="leftArrow">&lt</button></a>
-                <h3 id="lessonCount">2/2</h3>
-            </div>
+            
         </div>
         <div class="rightSS">
             <div class="visualLessonContent">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9MuOLrrGzbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="../../src/Igloo_lights[8748] Web.jpg">
+            </div>
+            <div class="bottomBar">
+                <h2><a href="./PageThree.html">Up Next: Remote Sensing Part 1</a></h2>
             </div>
         </div>
-        <div class="bottomBar">
-            <div class="lessonPlan">
+        <div id="classNavigation" class="navigationTab" onclick="openClassNav()">
+            <h2 id="initialCourseName">2. Snow Energy Balance</h2>
+            <div id="restOfCourses" class="otherCourses">
+                <h2>Course Components:</h2>
                 <h3>1. Field Methods</h3>
+                <h3>2. Snow Energy Balances</h3>
+                <h3>3. Remote Sensing Part 1</h3>
             </div>
+            <div id="courseVideo" class="classVideo">
+                <iframe src="https://www.youtube.com/embed/LV5elFtjjcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="cButton" id="closingButton" onclick="closeNavTab()">
+                <h1>x</h1>
+            </div>
+            
         </div>
     </div>
-
         
    <script src="../../JavaScript/index.js"></script>
+   <script src="../../JavaScript/snowSchoolInterfaceMain.js"></script>
 </body>
 </html>

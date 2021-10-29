@@ -7,8 +7,8 @@ Jori Carter
 
 
 //Menu functions
-let menu = document.getElementById("myMenu");
-let main = document.getElementById("main");
+const menu = document.getElementById("myMenu");
+const main = document.getElementById("main");
 
 const openNav = () => {
     menu.style.width = "250px";
@@ -32,21 +32,19 @@ const changingPicture = (index) => {
     let credits = document.getElementById("photoCredits");
 
     if (index === 0) {
-        picture.src = "src/Sinter Snowmobile Picture.jpg";
+        picture.src = "src/Sinter Snowmobile Picture Web.jpg";
         credits.innerHTML = "Photo Credits: Arvids Silis"
     } else if (index === 1) {
-        picture.src = "src/DSC_0416-1.jpg";
+        picture.src = "src/DSC_0416-1 Web.jpg";
         credits.innerHTML = "Photo Credits: Jori Carter";
     } else if (index === 2) {
-        picture.src = "src/Igloo_lights[8748].jpg";
+        picture.src = "src/Igloo_lights[8748] Web.jpg";
         credits.innerHTML = "Photo Credits: Arvids Silis";
     }
 }
 
 
-const automaticSlideShow = () => {
-    setInterval(increaseIndex(), 2000);
-}
+
 
 const increaseIndex = () => {
     index++;
