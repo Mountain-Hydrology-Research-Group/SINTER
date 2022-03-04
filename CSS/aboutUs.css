@@ -43,14 +43,13 @@
 }
 
     .executiveBoard h2{
-        padding: 0 40%;
+        text-align: center;
     }
     .profileSpace {
         width: 90%;
         padding: 0 5%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        row-gap: 5%;
     }
     .profile {
        width: 90%;
@@ -169,4 +168,27 @@
             background-size: cover;
             background-position: center;
         }
-    
+
+        #profileET{
+            background-image: url(../src/E_Trujillo_1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #profileAT{
+            background-image: url(../src/AmritThapa.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #profileSG{
+            background-image: url(../src/Simon.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #profileGM{
+            background-image: url(../src/giulia_pic_SINTER.jpg);
+            background-size: cover;
+            background-position: center;
+        }
